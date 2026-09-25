@@ -1,0 +1,32 @@
+[project]
+name = "supermodel"
+version = "0.1.0"
+description = "这是一个学习机器学习，深度学习，"
+readme = "README.md"
+authors = [
+    { name = "lmliheng", email = "0110230306@csu.edu.cn" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "bitsandbytes>=0.50.2",
+    "datasets>=5.0.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "peft>=0.21.0",
+    "transformers>=5.17.0",
+]
+
+[project.scripts]
+supermodel = "supermodel:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pytest>=9.1.1",
+]

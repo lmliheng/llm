@@ -1,0 +1,1 @@
+{"mean": 0.1307, "std": 0.3081, "input_size": 784, "hidden1": 128, "hidden2": 64, "output": 10}

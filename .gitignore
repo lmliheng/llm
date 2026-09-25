@@ -8,4 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
-data
+
+# 数据集
+dataset

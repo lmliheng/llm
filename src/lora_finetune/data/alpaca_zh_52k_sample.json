@@ -1,0 +1,102 @@
+[
+  {
+    "instruction": "请介绍一下你自己。",
+    "input": "",
+    "output": "我是一个由lmliheng研发的llm，名叫lh。我可以回答问题、提供信息、协助创作等。"
+  },
+  {
+    "instruction": "用Python写一个斐波那契数列函数。",
+    "input": "",
+    "output": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a"
+  },
+  {
+    "instruction": "解释什么是机器学习。",
+    "input": "",
+    "output": "机器学习是人工智能的一个分支，它使计算机能够从数据中学习模式和规律，而不需要明确的编程指令。"
+  },
+  {
+    "instruction": "将以下句子翻译成英文：今天天气真好。",
+    "input": "",
+    "output": "The weather is really nice today."
+  },
+  {
+    "instruction": "写一首关于春天的短诗。",
+    "input": "",
+    "output": "春风拂面暖阳斜，\n花开满园香万家。\n燕子归来寻旧垒，\n一年好景在春华。"
+  },
+  {
+    "instruction": "请列出三种常见的排序算法及其时间复杂度。",
+    "input": "",
+    "output": "1. 冒泡排序：O(n²)\n2. 快速排序：平均O(n log n)，最坏O(n²)\n3. 归并排序：O(n log n)"
+  },
+  {
+    "instruction": "什么是区块链？",
+    "input": "",
+    "output": "区块链是一种分布式账本技术，数据以区块形式链接存储，具有去中心化、不可篡改、透明可追溯等特点。"
+  },
+  {
+    "instruction": "帮我写一封求职邮件。",
+    "input": "",
+    "output": "尊敬的招聘经理：\n\n您好！我在贵公司官网看到机器学习工程师的招聘信息，对此职位非常感兴趣。我拥有计算机科学硕士学位和三年相关工作经验，熟练掌握Python、TensorFlow和PyTorch。\n\n期待您的回复。\n\n此致\n敬礼\n张三"
+  },
+  {
+    "instruction": "解释什么是过拟合，以及如何避免。",
+    "input": "",
+    "output": "过拟合是指模型在训练数据上表现很好，但在新数据上表现差的现象。避免方法包括：增加训练数据、降低模型复杂度、使用正则化（如L1/L2）、早停法等。"
+  },
+  {
+    "instruction": "请用通俗的语言解释相对论。",
+    "input": "",
+    "output": "相对论是爱因斯坦提出的理论，核心思想是时间和空间不是绝对的，而是相对的。比如，你坐在火车上和站在站台上的人，感受到的时间流逝速度是不一样的。"
+  },
+  {
+    "instruction": "给我推荐三本必读的计算机科学书籍。",
+    "input": "",
+    "output": "1.《计算机程序的构造和解释》（SICP）\n2.《算法导论》\n3.《深入理解计算机系统》（CSAPP）"
+  },
+  {
+    "instruction": "如何提高Python代码的执行效率？",
+    "input": "",
+    "output": "1. 使用NumPy/Pandas代替纯Python循环\n2. 多用列表推导式\n3. 使用生成器节省内存\n4. 适当使用多线程/多进程\n5. 用Cython或Numba加速关键部分"
+  },
+  {
+    "instruction": "什么是云计算？",
+    "input": "",
+    "output": "云计算是通过互联网提供按需计算资源的模式，包括服务器、存储、数据库、网络、软件等。用户按使用量付费，无需前期投入大量硬件成本。"
+  },
+  {
+    "instruction": "写一个Python装饰器，用于计算函数执行时间。",
+    "input": "",
+    "output": "import time\n\ndef timer_decorator(func):\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        end = time.time()\n        print(f'{func.__name__} 执行耗时: {end-start:.4f}秒')\n        return result\n    return wrapper"
+  },
+  {
+    "instruction": "解释TCP和UDP的区别。",
+    "input": "",
+    "output": "TCP面向连接，可靠传输，保证数据顺序，适用于网页浏览、文件传输等。UDP无连接，不可靠但速度快，适用于视频直播、在线游戏等实时应用。"
+  },
+  {
+    "instruction": "什么是RESTful API？",
+    "input": "",
+    "output": "RESTful API是一种基于HTTP协议的API设计风格，使用GET、POST、PUT、DELETE等方法对应CRUD操作，资源通过URL定位，具有无状态、可缓存等特点。"
+  },
+  {
+    "instruction": "请用Markdown格式写一份会议纪要模板。",
+    "input": "",
+    "output": "# 会议纪要\n\n**日期**：YYYY-MM-DD\n**参会人员**：张三、李四、王五\n\n## 议题\n1. 项目进度汇报\n2. 问题讨论\n3. 下一步计划\n\n## 决议\n- 事项一：...\n- 事项二：...\n\n## 待办事项\n- [ ] 张三：完成XX报告\n- [ ] 李四：安排XX会议"
+  },
+  {
+    "instruction": "解释什么是微服务架构。",
+    "input": "",
+    "output": "微服务架构是一种将应用程序拆分为多个小型、独立服务的架构风格。每个服务负责单一业务功能，可独立开发、部署和扩展，服务间通过轻量级通信机制（如HTTP/REST）协作。"
+  },
+  {
+    "instruction": "写一个二分查找算法的Python实现。",
+    "input": "",
+    "output": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"
+  },
+  {
+    "instruction": "什么是Git？列举五个常用命令。",
+    "input": "",
+    "output": "Git是一个分布式版本控制系统。常用命令：\n1. git clone：克隆仓库\n2. git add：暂存更改\n3. git commit：提交更改\n4. git push：推送远程\n5. git pull：拉取更新"
+  }
+]

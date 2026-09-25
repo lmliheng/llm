@@ -11,3 +11,5 @@ wheels/
 
 # 数据集
 dataset
+src/lora_finetune/data/tokenized_data
+src/lora_finetune/output

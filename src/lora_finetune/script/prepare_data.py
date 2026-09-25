@@ -3,7 +3,7 @@ import os
 from datasets import Dataset
 from transformers import AutoTokenizer
 
-DATA_PATH = "lora_finetune/data/alpaca_zh_52k_sample.json"
+DATA_PATH = "lora_finetune/data/alpaca_data_500.json"
 OUTPUT_PATH = "lora_finetune/data/tokenized_data"
 
 # print(os.path.dirname(OUTPUT_PATH))

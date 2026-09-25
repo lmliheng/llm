@@ -1,32 +1,27 @@
 [project]
 name = "supermodel"
 version = "0.1.0"
-description = "这是一个学习机器学习，深度学习，"
-readme = "README.md"
-authors = [
-    { name = "lmliheng", email = "0110230306@csu.edu.cn" }
-]
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
-    "accelerate>=1.15.0",
-    "bitsandbytes>=0.50.2",
-    "datasets>=5.0.1",
-    "matplotlib>=3.11.2",
-    "numpy>=2.5.3",
-    "pandas>=3.0.6",
-    "peft>=0.21.0",
-    "transformers>=5.17.0",
+    "torch==2.7.1+cu128",
+    "torchvision==0.22.1+cu128",
+    "transformers==4.44.2",
+    "accelerate==0.34.2",
+    "peft==0.12.0",
+    "datasets==2.21.0",
+    "sentencepiece>=0.1.99",
+    "protobuf>=3.20.0,<5.0.0",
 ]
 
-[project.scripts]
-supermodel = "supermodel:main"
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+torchvision = [{ index = "pytorch-cu128" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
 
 [build-system]
-requires = ["uv_build>=0.12.18,<0.13.0"]
-build-backend = "uv_build"
-
-[dependency-groups]
-dev = [
-    "jupyter>=1.1.1",
-    "pytest>=9.1.1",
-]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -99,7 +99,7 @@ print(f"训练数据量: {len(tokenized_dataset)} 条")
 trainer.train()
 
 # 保存Lora权重
-model.save_pretrained(os.path.join(OUTPUT_DIR, "lora_adapter"))
+model.save_pretrained(os.path.join(OUTPUT_DIR, "lora_adapter_9_27_2"))
 # 保证tokenizer配置
-tokenizer.save_pretrained(os.path.join(OUTPUT_DIR, "lora_adapter"))
+tokenizer.save_pretrained(os.path.join(OUTPUT_DIR, "lora_adapter_9_27_2"))
 print(f"训练完成")

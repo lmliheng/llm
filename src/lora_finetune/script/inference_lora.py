@@ -3,7 +3,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
 BASE_MODEL = "Qwen/Qwen2.5-0.5B"
-LORA_PATH = "lora_finetune/output/lora_adapter"
+LORA_PATH = "lora_finetune/output/lora_adapter_9_27"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -17,15 +17,15 @@ base_model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True
 )
 
-# 加载 LoRA 权重
+# 加载 LoRA 权重 
 model = PeftModel.from_pretrained(base_model, LORA_PATH)
 model.eval()
 
 # 测试
 test_prompts = [
-    "指令：请介绍一下你自己。",
-    "指令：用Python写一个斐波那契数列函数。",
-    "指令：解释什么是机器学习。",
+    "指令：如何在Linux中查找大文件？\n输出：",
+    "指令：请介绍一下你自己。\n输出：",
+    "指令：帮我写一封求职邮件。\n输出：",
 ]
 
 for prompt in test_prompts:

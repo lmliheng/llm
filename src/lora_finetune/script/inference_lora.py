@@ -2,8 +2,8 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
-BASE_MODEL = "Qwen/Qwen2.5-0.5B"
-LORA_PATH = "lora_finetune/output/lora_adapter_9_27"
+BASE_MODEL = "D:\\Models\\models\\Qwen2.5-0.5B"
+LORA_PATH = "lora_finetune/output/lora_adapter_9_27_2"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

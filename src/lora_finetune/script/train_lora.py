@@ -11,7 +11,7 @@ from transformers import (
 from peft import LoraConfig, get_peft_model, TaskType
 
 # 配置
-MODEL_NAME = "Qwen/Qwen2.5-0.5B"
+MODEL_NAME = "D:\\Models\\models\\Qwen2.5-0.5B"
 DATA_PATH = "lora_finetune/data/tokenized_data"
 OUTPUT_DIR = "lora_finetune/output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
